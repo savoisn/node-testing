@@ -1,0 +1,17 @@
+{
+  "name": "firstCoffee",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.coffee",
+  "dependencies": {
+    "chai": "~2.1.1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register --require should -R spec -u bdd -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
