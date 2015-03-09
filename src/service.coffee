@@ -21,12 +21,11 @@ class FileReader
 				if line.length > 0
 					console.log line
 					i=0
-
 					for elem in line.split(";")
 						#initialize array
 						if monindex[i] == undefined
-							monindex[i] = []
-						monindex[i][elem] = if monindex[i][elem] == undefined then 0 else monindex[i][elem]+1
+							monindex[i]={}
+						monindex[i][elem] = if monindex[i][elem] == undefined then 1 else monindex[i][elem]+1
 						i=i+1
 
 		# new lazy(fs.createReadStream(@file)).lines.forEach (line) ->
