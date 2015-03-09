@@ -25,3 +25,4 @@ describe 'FileReader', ->
 	it 'should log the file content', ->
 		fileReader = new FileReader 'csv.csv'
 		fileReader.read()
+		console.log fileReader.indexes
